@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Brushy",
+    "slug": "brush-alarm",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.arturcompany.brushalarm",
+      "infoPlist": {
+        "NSCameraUsageDescription": "The camera checks that you are really brushing your teeth. Video is never uploaded.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "package": "com.arturcompany.brushalarm",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-notifications",
+      "react-native-fast-tflite",
+      "expo-audio",
+      "expo-asset",
+      "@react-native-community/datetimepicker",
+      "expo-sharing"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "0fb5aa64-d6b1-4723-aa5d-21278e55c81e"
+      }
+    },
+    "owner": "airo33"
+  }
+}
